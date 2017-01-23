@@ -1,5 +1,5 @@
-# Duckietown Engineering Chile Documentation drafts
+#Documentation drafts
 
-Here we pin some important stuff that should be better organized and presented later
+Draft version of important documents to be used later
 
 [Raspberry Pi 3 configuration](Raspberry_Pi_3_installation.md)
