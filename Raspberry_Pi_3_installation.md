@@ -44,7 +44,8 @@ To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org
     
     sudo apt-get install ros-kinetic-{tf-conversions,cv-bridge,image-transport,camera-info-manager,theora-image-transport}
 
-** usb_cam **
-We use a standard USB camera rather than the PI-camera, so we need the [usb-cam](https://github.com/bosch-ros-pkg/usb_cam) package.
+**usb_cam**
+
+We use a standard USB camera rather than the PI-camera, so we need to download the [usb-cam](https://github.com/bosch-ros-pkg/usb_cam) package in our catkin workspace.
 
     
