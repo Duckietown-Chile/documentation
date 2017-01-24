@@ -1,7 +1,7 @@
 # Raspberry Pi 3 Installation and configuration
 
 ## Image creation
-We use Ubuntu Mate 16.04 available [here](https://ubuntu-mate.org/raspberry-pi/). According to the documentation, it has no issues with Wifi nor bluetooth.
+We use Ubuntu Mate 16.04 available [here](https://ubuntu-mate.org/raspberry-pi/). According to the documentation, it has no issues with neither Wifi nor bluetooth.
 
 ## Ubuntu configuration
 A clean installation of Ubuntu Mate 16 requires user creation and configuration via a GUI wizard pretty similar to a custom Ubuntu installation. Hence, it is recommended to use a display to configure this stuff.
@@ -36,7 +36,7 @@ The following commands are being checked from the [official duckiebot installati
 
 
 ### ROS Kinetic installation
-To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu), but installing **ROS-Base** `sudo apt-get install ros-kinetic-ros-base` rather than *desktop* or *full*
+To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu), but installing **ROS-Base** rather than *desktop* or *full* `sudo apt-get install ros-kinetic-ros-base` 
 
 
 ### Additional ROS packages
