@@ -36,11 +36,15 @@ The following commands are being checked from the [official duckiebot installati
 
 
 ### ROS Kinetic installation
-To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu), but installing **ROS-Base** `sudo apt-get install ros-kinetic-ros-base` rather than *desktop or *full*
+To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu), but installing **ROS-Base** `sudo apt-get install ros-kinetic-ros-base` rather than *desktop* or *full*
 
 
-### Install additional ROS pkgs to apt-get
-sudo apt-get install ros-indigo-{tf-conversions,cv-bridge,image-transport,camera-info-manager,theora-image-transport}
-
+### Additional ROS packages
+**TF, cv bridges and image stuff**
     
+    sudo apt-get install ros-kinetic-{tf-conversions,cv-bridge,image-transport,camera-info-manager,theora-image-transport}
+
+** usb_cam **
+We use a standard USB camera rather than the PI-camera, so we need the [usb-cam](https://github.com/bosch-ros-pkg/usb_cam) package.
+
     
