@@ -11,3 +11,36 @@ We set the following configuration for our duckiebots in the wizard:
     user: duckiebot
     password: quackquack (however, we also set it to log in automatically)
 
+## ROS Installation
+### Basic packages
+The following commands are being checked from the [official duckiebot installation script](https://github.com/duckietown/Software/blob/master/setup/duckiebot_img_creation.sh)
+
+** Packages already included in Mate 16: **
+
+    sudo apt-get install openssh-server
+    sudo apt-get install avahi-daemon avahi-discover avahi-utils
+    build-essential
+    python
+    python-dev
+    python-pip
+    curl
+    libyaml-cpp-dev
+    
+** Packages NOT included that must be installed **
+
+    sudo apt-get install git
+    ipython
+    htop
+    byobu
+    libav-tools
+
+
+### ROS Kinetic installation
+To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu), but installing **ROS-Base** `sudo apt-get install ros-kinetic-ros-base` rather than *desktop or *full*
+
+
+### Install additional ROS pkgs to apt-get
+sudo apt-get install ros-indigo-{tf-conversions,cv-bridge,image-transport,camera-info-manager,theora-image-transport}
+
+    
+    
