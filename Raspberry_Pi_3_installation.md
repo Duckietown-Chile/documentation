@@ -42,7 +42,7 @@ To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org
 ### Additional ROS packages
 **TF, cv bridges and image stuff**
     
-    sudo apt-get install ros-kinetic-{tf-conversions,cv-bridge,image-transport,camera-info-manager,theora-image-transport}
+    sudo apt-get install ros-kinetic-{tf-conversions,cv-bridge,image-transport,camera-info-manager,theora-image-transport, image-geometry}
 
 **usb_cam**
 
