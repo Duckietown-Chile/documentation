@@ -13,8 +13,9 @@ Old: Move to the `catkin_ws`directory and run `catkin_make -j1` to build the wor
 ## Sourcing
 **TODO:** Include this in a script or check the current scripts such as `environment.sh`:
 
-    echo "source ~/duckietown/catkin_ws/devel/setup.bash" >> ~/.bashrc
-    
+    echo "source ~/duckietown/catkin_ws/devel/setup.bash" >> ~/.bashrc
+
+
 ## Ethernet issues
 We are facing some problems with ethernet connection while an accessory is attached in the usb ports closer the ethernet port. 
 
