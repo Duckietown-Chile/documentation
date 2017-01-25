@@ -65,7 +65,7 @@ Old: Move to the `catkin_ws`directory and run `catkin_make -j1` to build the wor
     echo "source ~/duckietown/catkin_ws/devel/setup.bash" >> ~/.bashrc
     
 ### Ethernet issuesduckietown_driver
-We are facing some problems with ethernet connection while an usb accesory is attached in the usb ports closer the ethernet port. 
+We are facing some problems with ethernet connection while an accessory is attached in the usb ports closer the ethernet port. 
 
 **TODO:** check why this is happening
 
