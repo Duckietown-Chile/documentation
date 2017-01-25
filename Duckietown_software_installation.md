@@ -42,7 +42,7 @@ Check whether `/dev/ttyS0`(RPi3) or `/dev/ttyAMA0` (Rpi2) are available. Please 
 If you can't find any, fall into despair because Ubuntu is not recognizing any serial port. **TODO:** read if this is possible and why.
 
 
-Give permission to the current user to use `/dev/ttyS0`(RPi3) or `/dev/ttyAMA0` (Rpi2) by typing:
+Give permission to the current user to access `/dev/ttyS0`(RPi3) or `/dev/ttyAMA0` (Rpi2) by typing:
 
     sudo usermod -a -G dialout duckiebot
     sudo chmod a+rw /dev/ttyS0
