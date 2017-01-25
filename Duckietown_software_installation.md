@@ -43,7 +43,7 @@ Give permission to the current user to use `/dev/ttyS0`(RPi3) or `/dev/ttyAMA0` 
     sudo usermod -a -G dialout duckiebot
     sudo chmod a+rw /dev/ttyS0
 
-**Only for RPi3:** Since RPi3 has Bluetooth and UART, there are some changes with respect to RPi2. You can find a nice explanation [here](http://raspberrypi.stackexchange.com/a/45571).
+**Only for RPi3:** Since RPi3 has Bluetooth and UART, there are some changes with respect to RPi2. You can find a nice explanation [here](http://raspberrypi.stackexchange.com/a/45571) and even more detailed [here](http://www.briandorey.com/post/Raspberry-Pi-3-UART-Overlay-Workaround).
 Because of this, you have to modify the core frequency by adding the following line in `/boot/config.txt`:
 
     core_freq=250
