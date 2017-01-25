@@ -11,7 +11,7 @@ Old: Move to the `catkin_ws`directory and run `catkin_make -j1` to build the wor
 **TODO:** we still must check if we need to run `environment.sh` before running `catkin_make`
 
 ## Sourcing
-**TODO:** Include this in a script or check the current scripts such as `environment.sh`
+**TODO:** Include this in a script or check the current scripts such as `environment.sh`:
 
     echo "source ~/duckietown/catkin_ws/devel/setup.bash" >> ~/.bashrc
     
