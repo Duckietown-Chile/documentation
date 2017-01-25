@@ -58,3 +58,39 @@ We clone the Duckietown software repository in our home directory:
 Old: Move to the `catkin_ws`directory and run `catkin_make -j1` to build the workspace. Despite being slower, we had some compiler errors (**c++: internal compiler error: Killed (program cc1plus)**) while using more than 1 job.
 
 **TODO:** we still must check if we need to run `environment.sh` before running `catkin_make`
+
+### Sourcing
+**TODO:** Include this in a script or check the current scripts such as `environment.sh`
+
+    echo "source ~/duckietown/catkin_ws/devel/setup.bash" >> ~/.bashrc
+    
+### Ethernet issuesduckietown_driver
+We are facing some problems with ethernet connection while an usb accesory is attached in the usb ports closer the ethernet port. 
+
+**TODO:** check why this is happening
+
+
+### Arduino driver package installation
+Clone the arduino git repository
+    
+    mkdir ~/repositories
+    cd ~/repositories
+    git clone https://github.com/duckietown-chile/duckietown_driver.git
+
+Create a symlink to this repository in the duckietown workspace
+**TODO:** Check if we are going to preserve this file structure based in the repositories dir, or we are going to include the arduino driver into the Duckietown-Software repository as an official package
+
+    ln -s /home/duckiebot/repositories/duckietown_driver /home/duckiebot/duckietown/catkin_ws/src/duckietown_driver
+    
+Check whether `/dev/ttyAMA0` is available. if not, fall into despair. **TODO:** read if this is possible and why.
+
+Give permission to the current user to use `/dev/ttyAMA0` by typing:
+
+    sudo usermod -a -G dialout duckiebot
+    sudo chmod a+rw /dev/ttyAMA0
+
+**TODO:** More problems with serial communication, apparently because of bluetooth compatibility. Some ideas in this [link](http://raspberrypi.stackexchange.com/a/45571)
+    
+
+
+
