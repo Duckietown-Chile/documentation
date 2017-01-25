@@ -55,6 +55,6 @@ We clone the Duckietown software repository in our home directory:
     git clone https://github.com/duckietown-chile/Software.git duckietown
 
 ### Compilation
-Move to the `catkin_ws`directory and run `catkin_make -j1` to build the workspace. Despite being slower, we had some compiler errors (**c++: internal compiler error: Killed (program cc1plus)**) while using more than 1 job.
+Old: Move to the `catkin_ws`directory and run `catkin_make -j1` to build the workspace. Despite being slower, we had some compiler errors (**c++: internal compiler error: Killed (program cc1plus)**) while using more than 1 job.
 
 **TODO:** we still must check if we need to run `environment.sh` before running `catkin_make`
