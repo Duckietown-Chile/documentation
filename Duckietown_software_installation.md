@@ -18,6 +18,7 @@ Old: Move to the `catkin_ws`directory and run `catkin_make -j1` to build the wor
 
 ## Ethernet issues
 We are facing some problems with ethernet connection while an accessory is attached in the usb ports closer the ethernet port. 
+Edit 1: Apparently the power consuption is too high and the voltage is dropping below 4.6. The [multicolored square](http://forum.kodi.tv/showthread.php?tid=217280) appears at the right top corner.
 
 **TODO:** check why this is happening
 
