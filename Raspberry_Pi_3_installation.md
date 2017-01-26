@@ -47,3 +47,6 @@ To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org
 **usb_cam**
 
 We use a standard USB camera rather than the PI-camera, so we need to download the [usb-cam](https://github.com/bosch-ros-pkg/usb_cam) package in our catkin workspace.
+
+### ROS MASTER
+**TODO:** Check the scripts to set the `ROS_MASTER_URI`
