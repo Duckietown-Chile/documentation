@@ -34,6 +34,23 @@ The following commands are being checked from the [official duckiebot installati
     byobu
     libav-tools
 
+### Pi Camera packages
+** PiCamera Stuff**
+
+    sudo apt-get install --reinstall libraspberrypi0 libraspberrypi-{bin,dev,doc}
+**Append lines to /boot/config.txt to enable the PiCamera**
+
+    printf '#Enable PiCamera Interface\n %s\n %s\n' 'start_x=1' 'gpu_mem=256' | sudo tee -a /boot/config.txt
+**Create custom rule to enable camera**
+
+    printf 'SUBSYSTEM=="vchiq",GROUP="video",MODE="0660"' | sudo tee /etc/udev/rules.d/10-vchiq-permissions.rules
+**Add user to the video group**
+
+    sudo usermod -a -G video ubuntu
+
+# Install python picamera drivers
+sudo pip install picamera
+sudo pip install "picamera[array]"
 
 ### ROS Kinetic installation
 To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu), but installing **ROS-Base** rather than *desktop* or *full* `sudo apt-get install ros-kinetic-ros-base` 
