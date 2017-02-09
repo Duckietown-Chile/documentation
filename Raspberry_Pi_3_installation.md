@@ -35,7 +35,7 @@ The following commands are being checked from the [official duckiebot installati
     libav-tools
 
 ### Pi Camera packages
-** PiCamera Stuff**
+**PiCamera Stuff**
 
     sudo apt-get install --reinstall libraspberrypi0 libraspberrypi-{bin,dev,doc}
 **Append lines to /boot/config.txt to enable the PiCamera**
