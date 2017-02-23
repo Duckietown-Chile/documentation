@@ -67,3 +67,8 @@ We use a standard USB camera rather than the PI-camera, so we need to download t
 
 ### ROS MASTER
 **TODO:** Check the scripts to set the `ROS_MASTER_URI`
+
+### Python libraries
+We must install sklear in order to run the color calibrator node
+
+    sudo pip install sklearn
