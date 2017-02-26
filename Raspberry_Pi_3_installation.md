@@ -11,6 +11,26 @@ We set the following configuration for our duckiebots in the wizard:
     user: duckiebot
     password: quackquack (however, we also set it to log in automatically)
 
+## Creating swap
+It is useful to define a swap area to have memory available while compilating. DO the following steps:
+
+Create an empty file using the dd (device-to-device copy) command:
+    
+    sudo dd if=/dev/zero of=/swap0 bs=1M count=512 # This is for a 512 MB swap space.
+
+Format the file for use as swap:
+
+    sudo mkswap /swap0
+    
+Add the swap file to the system configuration:
+    
+    sudo emacs  /etc/fstab and add “/swap0 swap swap” at the bottom
+
+Activate the swap space:
+
+    sudo swapon -a
+
+
 ## ROS Installation
 ### Basic packages
 The following commands are being checked from the [official duckiebot installation script](https://github.com/duckietown/Software/blob/master/setup/duckiebot_img_creation.sh)
@@ -48,9 +68,10 @@ The following commands are being checked from the [official duckiebot installati
 
     sudo usermod -a -G video ubuntu
 
-# Install python picamera drivers
-sudo pip install picamera
-sudo pip install "picamera[array]"
+**Install python picamera drivers**
+
+    sudo pip install picamera
+    sudo pip install "picamera[array]"
 
 ### ROS Kinetic installation
 To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org/kinetic/Installation/Ubuntu), but installing **ROS-Base** rather than *desktop* or *full* `sudo apt-get install ros-kinetic-ros-base` 
@@ -64,9 +85,6 @@ To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org
 **usb_cam**
 
 We use a standard USB camera rather than the PI-camera, so we need to download the [usb-cam](https://github.com/bosch-ros-pkg/usb_cam) package in our catkin workspace.
-
-### ROS MASTER
-**TODO:** Check the scripts to set the `ROS_MASTER_URI`
 
 ### Python libraries
 We must install sklear in order to run the color calibrator node
