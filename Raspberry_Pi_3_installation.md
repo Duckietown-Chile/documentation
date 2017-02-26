@@ -82,11 +82,8 @@ To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org
     
     sudo apt-get install ros-kinetic-{tf-conversions,cv-bridge,image-transport,camera-info-manager,theora-image-transport, image-geometry}
 
-**usb_cam**
-
-We use a standard USB camera rather than the PI-camera, so we need to download the [usb-cam](https://github.com/bosch-ros-pkg/usb_cam) package in our catkin workspace.
-
 ### Python libraries
-We must install sklear in order to run the color calibrator node
+We must install sklearn in order to run the color calibrator node
 
-    sudo pip install sklearn
+    sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran
+    sudo pip install scipy --upgrade
