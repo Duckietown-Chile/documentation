@@ -86,4 +86,4 @@ To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org
 We must install sklearn in order to run the color calibrator node
 
     sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran
-    sudo pip install scipy --upgrade
+    sudo apt-get install python-sklearn // this is faster to install than using pip
