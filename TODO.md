@@ -1,6 +1,7 @@
 # TODO list
 
 ## Prioritary
+* Configure the duckiebots as hotspots
 * Calibrate the camera following the instructions at https://docs.google.com/document/d/1cCLnIvC7R2RmsS8phw1eaFWc6_HoWVd9p8tSMsVrWNQ/edit#
 ** Calibrate instrinsics (should be easy since it is the same as ROS')
 ** Calibrate extrinsics with ground_projection
