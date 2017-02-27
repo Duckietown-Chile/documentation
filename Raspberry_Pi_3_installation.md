@@ -80,7 +80,7 @@ To install ROS we follow the [standard Kinetic instructions](http://wiki.ros.org
 ### Additional ROS packages
 **TF, cv bridges and image stuff**
     
-    sudo apt-get install ros-kinetic-{tf-conversions,cv-bridge,image-transport,camera-info-manager,theora-image-transport, image-geometry}
+    sudo apt-get install ros-kinetic-{tf-conversions,cv-bridge,image-transport,camera-info-manager,theora-image-transport,image-geometry,image-proc}
 
 ### Python libraries
 We must install sklearn in order to run the color calibrator node. The apt way is faster than pip's:
