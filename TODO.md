@@ -23,6 +23,7 @@
 * Clean the `uchile/master-fall-2017` branch (delete packages and files not so important for our purposes)
 * Include the new packages (duckietown_driver) and launchfiles
 * Test in robots
+* Prepare templates for slides
 
 ## Robot related stuff
 * Soldering the duckiebot shield v2.0
