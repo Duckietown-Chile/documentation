@@ -6,7 +6,7 @@
 ** Calibrate instrinsics (should be easy since this is the same as ROS')
 ** Calibrate extrinsics with ground_projection
 * Prepare the field following the duckietown specifications
-* Fix the launch files to be compatible with our `duckietown_driver node`
+* ~~Fix the launch files to be compatible with our `duckietown_driver node`~~
 
 ## Check stuff
 * Calibrate gain and trim as indicated in: https://docs.google.com/document/d/14K9OqR0ijCkXIGxPY1OYpHSFWCuaDgN1qq1QojMDhQw/edit#heading=h.qvflfix5dy1c
