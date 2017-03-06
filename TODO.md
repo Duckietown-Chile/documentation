@@ -3,8 +3,8 @@
 ## Prioritary
 * Configure the duckiebots as hotspots
 * Calibrate the camera following the instructions at https://docs.google.com/document/d/1cCLnIvC7R2RmsS8phw1eaFWc6_HoWVd9p8tSMsVrWNQ/edit#
-- Calibrate instrinsics (should be easy since this is the same as ROS')
-- Calibrate extrinsics with ground_projection
+- ~~Calibrate instrinsics (should be easy since this is the same as ROS')~~ -> **Calibrate camera following duckietown-bunny instructions: ** https://hackmd.io/s/H13Mij-T
+- ~~Calibrate extrinsics with ground_projection~~
 * Prepare the field following the duckietown specifications
 * ~~Fix the launch files to be compatible with our `duckietown_driver node`~~
 
