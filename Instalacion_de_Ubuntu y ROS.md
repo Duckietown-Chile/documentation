@@ -35,4 +35,25 @@ El comando para instalarlo es:
 
     sudo apt-get install ros-kinetic-desktop-full
     
+## 1.7 Inicializa rosdep
+Rosdep permite instalar fácilmente las dependencias cuando necesites compilar algún programa de ROS (** TODO: buscar una descripción mas clara**)
+
+    sudo rosdep init
+    sudo rosdep update
+
+## 1.8 Configura tu entorno para trabajar con ROS
+ROS necesita cargar variables de entorno para reconocer en qué carpetas se almacena cada una de sus partes. Para eso, hay un archivo que debe cargarse cada vez que iniciamos sesión en nuestro computador. Esto lo haremos escribiendo el archivo `.bashrc` que se encuentra oculto en nuestra carpeta `home`.
+
+    echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+
+Luego, debemos indicar a la consola que estamos usando actualmente que hicimos este cambio. Para ello usamos el comando `source`:
+     
+     source ~/.bashrc
     
+## 1.9 Obtén rosinstall
+**TODO: Escribir una buena explicación de rosinstall (o decir que no es necesario y punto)**
+
+    sudo apt-get install python-rosinstall
+    
+
+** Estamos listos! **
