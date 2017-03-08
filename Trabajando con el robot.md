@@ -1,8 +1,7 @@
 #Trabajando con el robot
 
 ##1.Prender el robot
-Conectar los dos cables usb a la bateria
-EL negro a la izquierda, el rojo/negro a la derecha
+Conectar los dos cables usb a la bateria. EL negro a la izquierda, el rojo/negro a la derecha
 
 ##2.Crear una conexion ethernet compartida en tu computador
 (fotos pendientes)
@@ -12,7 +11,7 @@ EL negro a la izquierda, el rojo/negro a la derecha
  4. Elegir un nombre para la conexión
  5. Ir a ipv4 settings y seleccionar el método `compartido a otros computadores` o `shared to other computers`
  
-##3.Conecctar el cable ethernet al duckiebot y al pc
+##3.Conectar el cable ethernet al duckiebot y al pc
  
 ##4.Confirmar que el robot esté conectado
 ejecutar en la terminal (reemplazando robot con el nombre del duckiebot):
@@ -34,7 +33,7 @@ En caso contrario, buscar la ip usando nmap:
 En caso de no tener instalado nmap, ejecutar primero `sudo apt-get install nmap`
 Buscar la ip en los reultado que muestra
 
-##5.Conexon ssh
+##5.Conexión ssh
 Abrir una nueva terminal y conectar al duckiebot escribiendo(reemplazando robot con el nombre del robot):
     
     ssh duckiebot@robot.local
