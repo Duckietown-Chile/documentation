@@ -21,7 +21,17 @@ Donde `git clone` corresponde a un comando de git que le indíca al mismo git qu
 ## 1.5 Finalizar
 Si realizaste el proceso vía HTTPS y no obtuviste ningún error durante la descarga, felicitaciones!, ya estás listo para utilizar el software de duckietown, pero si obtuviste alguna especie de error, deberás completar los pasos descritos en el link del punto 1.4 para luego repetir el proceso del mismo punto, pero con la diferencia de que ahora debes clickear la esquina superior derecha de la pestaña en *Use SSH* y copiar el texto de esa sección.
     
-## Utilizando el código de Duckietown
+# Utilizando el código de Duckietown
 
+Una vez realizados los pasos de la sección anterior debemos proceder con la ejecución de ciertos scripts para utilizar el software de Duckietown. Si hemos completado correctamente los pasos anteriores, ahora dentro del directorio *home* debiera existir una carpeta llamada *duckietown*, lo puedes verificar escribiendo el comando `ls` en la terminal y luego presionando `ENTER`, donde se desplegará una lista de archivos y carpetas. Una vez hallas verificado esto, debes acceder a la carpeta escribiendo o directamente copiando lo siguiente:
 
+     cd duckietown
+     
+## 2.1 Inicializa environment.sh en la terminal
+Primero que todo debemos inicializar el script `environment.sh` en la terminal, el que se encuentra en la misma carpeta *duckietown*, puedes verificar entre los archivos nuevamente utilizando el comando `ls` descrito más arriba (notar que este paso no es necesario, pero es bueno acostumbrarse a los comandos de Ubuntu). Ahora debes ejecutar el script, para ello basta con copiar y pegar la siguiente línea en tu terminal
 
+    source environment.sh
+
+Donde el comando `source`simplemente ejecuta el contenido del script en cuestión en la terminal actual.
+
+## 2.2 Compilamos
