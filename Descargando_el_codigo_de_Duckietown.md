@@ -8,5 +8,17 @@ Aquí basta solo ingresar mediante el siguiente [enlace] (https://github.com/Duc
 ## 1.2 Abrir una terminal y cambiar al directorio home
 Puedes buscarla o simplemente presionar `Ctrl + ALt + T` en tu teclado. Una abierta la terminal, debes asegurarte que estás en el directorio home de Ubuntu, para acceder a él basta con escribir el comando `cd` y luego clickear `ENTER` en tu terminal. Esto te llevará directamente al directorio si es que no estabas en él.
 
+## 1.3 Clone or download
+Ahora debemos volver a la pagina que habíamos abierto inicialmente en el navegador, donde en el extremo superior derecho de la lista de carpetas podemos hallar un botón verde que dice *Clone or download*, lo clickeamos y se desplegará una pequeña pestaña la que dirá *Clone with SSH* o bien *Clone with HTTPS* (el valor por defecto depende de si la habías abierto previamente). En esta pestaña, para ambas opciones aparece una casilla con un texto el cual deberemos copiar.
+
+## 1.4.1 Clonar carpeta (Vía HTTPS)
+Una vez copiado el enlace de la casilla nos dirigimos nuevamente a la terminal donde asegurándonos de que estamos en la carpeta home escribimos:
+    
+    git clone "TEXTOCOPIADO" duckietown
+ 
+Donde `git clone` corresponde a un comando de git que le indíca al mismo git que debe clonar en el directorio actual algun repositorio en específico. En este caso el repositorio lo obtendrá del link que hemos copiado el cual debemos reemplazar en el comando descrito más arriba en donde dice `"TEXTOCOPIADO"` (incluyendo las comillas). Finalmente se escribe `duckietown` para asignar un nombre a la carpeta a crear (si no se escribe un nombre se le asignará el nombre del repositorio por defecto).
+    
+
+
 
 
