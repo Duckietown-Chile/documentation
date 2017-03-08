@@ -35,3 +35,12 @@ Primero que todo debemos inicializar el script `environment.sh` en la terminal, 
 Donde el comando `source`simplemente ejecuta el contenido del script en cuestión en la terminal actual.
 
 ## 2.2 Compilamos
+Ahora, sin cambiarnos de directorio ejecutamos el siguiente comando
+
+    make build
+    
+Lo que hará una serie de cosas, entre ellas crear una carpeta dentro de *catkin_ws* llamada *build*. En el caso de tener problemas durante este proceso (que en general puede deberse a procesadores con pocos nucleos), puedes ejecutar el siguiente comando en vez del anterior:
+
+    make build-single
+    
+Si ninguno de los dos comandos no funciona, no dudes en contactar al equipo docente de Duckietown!
