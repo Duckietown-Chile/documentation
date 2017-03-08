@@ -1,6 +1,6 @@
 # Generando una nueva clave SSH
 
-Después de checkear la existencia de alguna clave SSH, puedes generar una nueva clave y agregarla al agente de claves SSH. Si es que no tienes una clave SSH, debes generar una.
+Después de checkear la existencia de alguna clave SSH, puedes generar una nueva clave y agregarla al agente de claves SSH. Si es que no tienes una clave SSH, debes generar una. Estaremos siguiendo los pasos indicados en el tutorial oficial de Github en inglés, puedes revisarlo mediante el siguiente [enlace](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
 
 ## 1.1 Abrir una terminal y cambiar al directorio home
 Puedes buscarla o simplemente presionar `Ctrl + ALt + T` en tu teclado. Una abierta la terminal, debes asegurarte que estás en el directorio *home* de Ubuntu, para acceder a él basta con escribir el comando `cd` y luego clickear `ENTER` en tu terminal. Esto te llevará directamente al directorio si es que no estabas en él.
@@ -21,4 +21,18 @@ Una vez realizado el paso anterior, se te solicitará ingresar un archivo donde 
     Enter passphrase (empty for no passphrase): [Presionar ENTER]
     Enter same passphrase again: [Presionar ENTER]
     
-# Agregando tu clave SSH al agente-ssh
+# Agregando tu clave SSH al agente-SSH
+
+## 2.1 Iniciar el agente-SSH
+Primero debes asegurarte que el agente-SSH esta corriendo, lo iniciamos manualmente mediante el siguiente coando:
+
+    eval $(ssh-agent -s)
+    
+Obtendremos un mensaje de la siguiente forma
+
+     Agent pid XXXXX
+
+## 2.2 Agregar la clave SSH al agente
+Luego debemos agregar la clave SSH al agente, basta con ejecutar el sigueitne comando:
+
+    ssh-add ~/.ssh/id_rsa
