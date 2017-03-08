@@ -36,3 +36,22 @@ Obtendremos un mensaje de la siguiente forma
 Luego debemos agregar la clave SSH al agente, basta con ejecutar el siguiente comando:
 
     ssh-add ~/.ssh/id_rsa
+
+# Agregando la clave SSH a la cuenta de Github
+
+Para configurar la cuenta de Github usando la clave SSH, debemos agregarla a la cuenta.
+
+## 3.1 Copiar la clave SSH al portapapeles
+Para copiar la clave SSH, primero debemos ejecutar un par de lineas de código en el directorio *home*, basta con copiar y pegar:
+
+    sudo apt-get install xclip
+    xclip -sel clip < ~/.ssh/id_rsa.pub
+    
+Donde la primera linea instala xclip, mientras que la segunda utiliza xclip para guardar en nuestro portapapeles el string que contiene nuestra clave SSH.
+
+## 3.2 Abrir las configuraciones de la cuenta y agregar la clave.
+En la esquina superior derecha de Github, haz click en tu foto de perfil, y clickea **Settings**, luego aparecerá una lista al lado izquierdo del navegador, haz click en **SSH and GPG key**. Luego pincha sobre el botón verde que dice **New SSH key**.
+
+En el campo del Título agrega una descripción para la nueva llave, por ejemplo si estás usando tu notebook personal, puedes escribir "Notebook Personal Samsung" (puse Samsung porque el mio lo es, pero puedes poner cualquier cosa).
+
+Ahora basta con pegar en el campo "Key" lo que tienes guardado en el portapapeles, basta hacerlo con `CTRL+V` o simplemente click derecho y pegar. Una vez hallas pegado esto, haz click en **Add SSH Key**. Felicidades!, ya terminaste con este tutorial.
