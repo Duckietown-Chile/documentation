@@ -33,6 +33,6 @@ Obtendremos un mensaje de la siguiente forma
      Agent pid XXXXX
 
 ## 2.2 Agregar la clave SSH al agente
-Luego debemos agregar la clave SSH al agente, basta con ejecutar el sigueitne comando:
+Luego debemos agregar la clave SSH al agente, basta con ejecutar el siguiente comando:
 
     ssh-add ~/.ssh/id_rsa
