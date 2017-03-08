@@ -12,7 +12,7 @@ Puedes buscarla o simplemente presionar `Ctrl + ALt + T` en tu teclado. Una abie
 Ahora debemos volver a la pagina que habíamos abierto inicialmente en el navegador, donde en el extremo superior derecho de la lista de carpetas podemos hallar un botón verde que dice *Clone or download*, lo clickeamos y se desplegará una pequeña pestaña la que dirá *Clone with SSH* o bien *Clone with HTTPS* (el valor por defecto depende de si la habías abierto previamente). En esta pestaña, para ambas opciones aparece una casilla con un texto el cual deberemos copiar.
 
 ## 1.4 Clonar carpeta
-El siguiente paso es común para clonar via SSH o vía HTTPS, si nunca haz clonado vía SSH debes completar primero los pasos descritos [aquí](google.com), si lo vas a hacer vía HTTPS o ya completaste los pasos descritos en el link alguna vez en tu computador puedes seguir con lo que viene a continuación. Una vez copiado el enlace de la casilla nos dirigimos nuevamente a la terminal donde asegurándonos de que estamos en la carpeta *home* escribimos:
+El siguiente paso es común para clonar via SSH o vía HTTPS, si nunca haz clonado vía SSH debes completar primero los pasos descritos [aquí](https://github.com/Duckietown-Chile/documentation/blob/master/Obteniendo_SSH_key.md), si lo vas a hacer vía HTTPS o ya completaste los pasos descritos en el link alguna vez en tu computador puedes seguir con lo que viene a continuación. Una vez copiado el enlace de la casilla nos dirigimos nuevamente a la terminal donde asegurándonos de que estamos en la carpeta *home* escribimos:
     
     git clone "TEXTOCOPIADO" duckietown
  
