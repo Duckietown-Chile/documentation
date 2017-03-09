@@ -22,6 +22,8 @@ conectarse a byobu
     duckiebot@duckiebot:~$ byobu
     
 hacer source
+
+
     duckiebot@duckiebot:~$ cd /duckietown
     
     duckiebot@duckiebot:~/duckietown$ source environment.sh 
@@ -32,8 +34,13 @@ hacer source
     
  probar el joystick
  
-    duckiebot@duckiebot:~/duckietown$ roslaunch duckietown joystick.launch veh:=duckiebot
-    
+     duckiebot@duckiebot:~/duckietown$ roslaunch duckietown joystick.launch veh:=duckiebot
+     
+     
+     
+ una vez hecho lo anterior probar el funcionamiento del robot en una linea recta.
+notará
+    
     
      
     
