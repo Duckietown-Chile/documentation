@@ -5,9 +5,9 @@ Conectar los dos cables usb a la bateria. EL negro a la izquierda, el rojo/negro
 
 ##2.Crear una conexion ethernet compartida en tu computador
 (fotos pendientes)
- 1. Apretar el icono de redes y poner **editar conexiones** o **edit connections**
- 2. seleccionar **añadir** o **add**
- 3. Seleccionar tipo **ethernet** y **crear** o **create**
+ 1. Apretar el icono de redes y poner <kbd>editar conexiones</kbd> o <kbd>edit connections</kbd>
+ 2. seleccionar <kbd>añadir</kbd> o <kbd>add</kbd>
+ 3. Seleccionar tipo `ethernet` y presionar <kbd>crear</kbd> o <kbd>create</kbd>
  4. Elegir un nombre para la conexión
  5. Ir a ipv4 settings y seleccionar el método `compartido a otros computadores` o `shared to other computers`
  
@@ -38,4 +38,4 @@ Abrir una nueva terminal y conectar al duckiebot escribiendo(reemplazando robot 
     
     ssh duckiebot@robot.local
     
-Escribir **yes** cuando pida confirmar la conexion
+Escribir `yes` cuando pida confirmar la conexion(solo la primera vez) y luego la contraseña `quackquack`
