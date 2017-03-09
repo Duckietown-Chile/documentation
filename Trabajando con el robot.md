@@ -39,3 +39,19 @@ Abrir una nueva terminal y conectar al duckiebot escribiendo(reemplazando robot 
     ssh duckiebot@robot.local
     
 Escribir `yes` cuando pida confirmar la conexion(solo la primera vez) y luego la contraseña `quackquack`
+##6. entrar a  la carpeta duckietown
+Entrar a la carpeta de duckietown ejecutando `cd duckietown/`
+##7. Actualizar
+Actualizar los archivos locales escribiendo en la terminal lo siguiente:
+    
+    git pull origin master
+    
+##Utilidades
+###Caja
+Caja es un explorador de archivos grafico. Se ejecuta escribiendo `caja` en la terminal. (añadir imagen)
+###Byobu
+Byobu es un emulador de terminal que permite trabajar en varias pestañas.
+
+Se ejecuta escribiendo `byobu` en la terminal.
+
+Las nuevas pestañas se abren con <kbd>F2</kbd> y se alternan con <kbd>alt</kbd> + la flecha izquierda o derecha del teclado
