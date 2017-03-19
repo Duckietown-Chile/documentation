@@ -49,6 +49,26 @@ Actualizar los archivos locales escribiendo en la terminal lo siguiente:
     
     git pull origin master
     
+## Conexión WIFI
+### Encender el Hotspot
+Para controlar el duckiebot de forma remota se debe establecer una conexion wifi con este siguiendo las siguentes instrucciones:
+
+1. Debe estar dentro de la carpeta de duckietown, si no lo está, siga el paso 6.
+2. Configure el nombre del robot ejecutando en el terminal `source set_vehicle_name.sh <duckiebot>` reemplazando duckiebot con el nombre del suyo
+3. Encender el hotspot wifi ejecutando `./hotspot.sh on`
+4. Escriba la Cotraseña cuando se la pida `quackquack`
+5. En este punto, perdera la conexion con el duckiebot y debería existir una red wifi con el nombre _nombre_del_duckiebot_-wifi
+6. Conectese a esta red con la contraseña `quackquack`
+7. Proceda igual como los pasos 4 y 5 de esta guía para conectarse nuevamente a su duckiebot
+
+### Desconectar el Hotspot
+1. Debe estar dentro de la carpeta de duckietown, si no lo está, siga el paso 6.
+2. Configure el nombre del robot ejecutando en el terminal `source set_vehicle_name.sh <duckiebot>` reemplazando duckiebot con el nombre del suyo
+3. Apage el hotspot ejecutando `./hotspot.sh off`
+4. Perderá la conexion con el duckiebot
+
+#### Nota
+Mientras el Hotspot esté encendido, no podra establecer una conexión ssh con el duckiebot mediante el cable ethernet.
 ## Utilidades
 ### Caja
 Caja es un explorador de archivos grafico. Se ejecuta escribiendo `caja` en la terminal. **(añadir imagen)**
