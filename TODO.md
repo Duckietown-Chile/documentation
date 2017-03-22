@@ -22,15 +22,17 @@
 ## Course related stuff
 * Clean the `uchile/master-fall-2017` branch (delete packages and files not so important for our purposes)
 * Include the new packages (duckietown_driver) and launchfiles
-* Test in robots
+* ~~Test in robots~~
 * ~~Prepare templates for slides~~
-* Design credential cards for students 
+* ~~Design credential cards for students ~~
 
 ## Robot related stuff
-* Soldering the remaining duckiebot shields
-* Assemble the 10 remaining duckiebots. Save the unused parts
+* ~~Soldering the remaining duckiebot shields~~
+* Soldering the remaining H-bridge cables
+* Soldering the remaining motors
+* ~~Assemble the 10 remaining duckiebots. Save the unused parts~~
 * Test the installation scripts in a few. Copy the image in the others.
 * Clone the `uchile/master-fall-2017` branch in each robot. 
 * Check dependencies and fix the installation script if necessary. Use names as 'duckiebotX'
-* Configure joysticks to avoid connection issues due to multiple xbox controllers and receivers
+* ~~Configure joysticks to avoid connection issues due to multiple xbox controllers and receivers~~
 * Once everything works, dissasemble the 10 duckiebots and prepare kits for students
