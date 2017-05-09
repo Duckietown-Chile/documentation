@@ -7,4 +7,5 @@
 
 # Byobu
 Para habilitar los colores bonitos `byobu-enable-prompt`
+
 Para habilitar ssh con byobu por defecto `byobu-enable`
