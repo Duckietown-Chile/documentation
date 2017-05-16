@@ -14,15 +14,17 @@ ej: tiles_prueba.csv
     2, 1, turn     , 90
     
 #### Tipos de piso:
-**straight**
-**turn**
-**empty**
-**3way**
-**4way**
-**pond**
-**halfpond**
+
+* straight
+* turn
+* empty
+* 3way
+* 4way
+* pond
+* halfpond
 
 ## Crear CSV de los _tags_
+
 Se debe crear un archivo en el _package_ `duckietown_description` como el siguiente:
 ej: tags_prueba.csv
     
@@ -32,9 +34,10 @@ ej: tags_prueba.csv
     
 
 #### Tipos de tags
+
 Ver en `duckietown_description/urdf/meshes/tags`
 
-####Posiciones de _tags_
+#### Posiciones de _tags_
 Con respecto a la esquina inferior izquierda
 
 | pos | x´     |  y´     |
@@ -47,8 +50,6 @@ Con respecto a la esquina inferior izquierda
 | 5   | -0.035 | -0.09  |
 | 6   | 0.035  | -0.09  |
 | 7   | 0.09   | -0.035 |
-
-##Generar archivo _xacro_
 
 ## Generar archivo _xacro_
 
@@ -66,6 +67,4 @@ El mapa generado se puede lanzar en _rviz_ con el siguiente comando:
 Se puede cargar el mapa sin lanzar _rviz_ con `gui:=false`
 
 ### To-Do:
-* ver posiciones de los tags
-* ver a que corresponden las coordenadas
-* ver sistema de referencia
+* Imagen de referencia
