@@ -30,6 +30,7 @@ ej: tags_prueba.csv
     7,  2, 2, 2,   180
     512,2, 1, 2,   180
     
+
 #### Tipos de tags
 Ver en `duckietown_description/urdf/meshes/tags`
 
@@ -48,20 +49,23 @@ Con respecto a la esquina inferior izquierda
 | 7   | 0.09   | -0.035 |
 
 ##Generar archivo _xacro_
+
+## Generar archivo _xacro_
+
 Una vez que se tengan los archivos para el mapa y los tags, se debe lanzar el nodo _csv2xacro_ para generar el _xacro_ del mapa de la siguiente forma en la terminal:
     
     roslaunch duckietown_description csv2xacro_node.launch tile_map_csv:=/path/to/<tiles_mapname>.csv tag_map_csv:=/path/to/<tags_mapname>.csv map_name:=mapname
     
 El archivo generado se guardara en `duckietown_description/urdf` con el nombre dado en `map_name` de la forma `<map_name>.urdf.xacro`.
 
-##Lanzar el mapa en _rviz_ 
+## Lanzar el mapa en _rviz_ 
 El mapa generado se puede lanzar en _rviz_ con el siguiente comando:
     
     roslaunch duckietown_description duckietown_description_node.launch map_name:=mapname veh:=duckiebot gui:=true
     
 Se puede cargar el mapa sin lanzar _rviz_ con `gui:=false`
 
-###To-Do:
+### To-Do:
 * ver posiciones de los tags
 * ver a que corresponden las coordenadas
 * ver sistema de referencia
