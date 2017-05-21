@@ -1,7 +1,8 @@
 # Instrucciones para habilitar lanzamiento remoto de roslaunchs
+Referencia: https://docs.google.com/document/d/1HP5ao3LwgQ1EkdRb3ksiMg8zdrpJXjSIH_XG2RFHyes/edit#
 
 ## En los laptops
-###Conectarse por ssh al duckiebot
+### Conectarse por ssh al duckiebot
 
     laptop $ ssh ubuntu@duckiebot.local 
     
