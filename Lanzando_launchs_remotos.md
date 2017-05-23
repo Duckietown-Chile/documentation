@@ -26,7 +26,7 @@ Dentro del archivo, con la interfaz de `nano`, escribir
     
     Host duckiebot
         Hostname duckiebot.local
-	      User ubuntu
+	      User duckiebot
 	      IdentityFile ~/.ssh/duckietown_key1
         HostKeyAlgorithms ssh-rsa
 
